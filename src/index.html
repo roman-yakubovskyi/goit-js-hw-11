@@ -21,16 +21,26 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-  <div class="main-container">
-      <form>
-        <label for="user-search">
-          <input type="text" id="user-search" placeholder="Search images..." />
-        </label>
-        <button type="submit">Search</button>
-      </form>
-    <div class="container-loader"> <span class="loader hidden"></span></div>
+    <header class="header">
+      <div class="main-container">
+        <form class="form">
+          <label for="user-search">
+            <input
+              type="text"
+              name="query"
+              id="user-search"
+              class="input"
+              placeholder="Search images..."
+            />
+          </label>
+          <button type="submit" class="button">Search</button>
+        </form>
         <ul class="gallery"></ul>
-        <script type="module" src="./main.js"></script>
-    </body>
-  </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-loader"><span class="loader"></span></div>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
